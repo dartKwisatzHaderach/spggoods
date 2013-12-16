@@ -1,9 +1,0 @@
-class AdminPage
-  include PageObject
-  
-  page_url "http://test:interesnee@test.interesnee.ru/admin"
-
-  text_field(:user_email, :name => "email")
-  text_field(:password, :name => "password")
-
-end
