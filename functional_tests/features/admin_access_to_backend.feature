@@ -1,3 +1,4 @@
+@sign_in
 Feature: admin access to backend
         As an admin
         I want to sign in

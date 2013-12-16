@@ -15,6 +15,7 @@ When(/^push 'Login' button$/) do
 end
 
 Then(/^a should access backend with admin priveleges$/) do
-  sleep(5)
+  sleep(3)
+  on_page(AdminPanelPage).greeting
 end
 

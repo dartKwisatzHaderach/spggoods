@@ -7,5 +7,12 @@ class SignInPage
   text_field(:password, :name => "password")
 
   div(:login, :css => ".big-blue-button.float-right.mr68")
+  
+  def login_with(username, password)
+    self.user_email = username
+    self.password = password
+    self.execute_script("document.getElementsByClassName('big-blue-button float-right mr68')[0].click()")
+    sleep(3)
+  end
 
 end
