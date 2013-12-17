@@ -1,10 +1,11 @@
-Given(/^I am sign in as admin$/) do
+Given(/^I am sign in as admin witn "(.*?)", "(.*?)"$/) do |email, password|
   visit(SignInPage)
-  on_page(SignInPage).login_with("admin@spggoods.com", "admin")
+  on_page(SignInPage).sign_in_with(email, password)
 end
 
 When(/^I open 'Add customer' page$/) do
   visit(AddCustomerPage)
+  sleep(2)
 end
 
 When(/^push 'Add budget' button when 'Budget Name', 'Frequancy', 'Balance' fields are empty$/) do
