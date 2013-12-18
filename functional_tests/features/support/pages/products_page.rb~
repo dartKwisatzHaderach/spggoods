@@ -15,6 +15,6 @@ class ProductsPage
   end
 
   def table_header_product_name
-    return self.execute_script("document.getElementsByTagName('table')[0].children[0].children[0].children[0].children[0].innerHTML")
+    return self.execute_script("document.getElementsByTagName('table')[0].children[0].children[0].children[0].innerHTML")
   end
 end
