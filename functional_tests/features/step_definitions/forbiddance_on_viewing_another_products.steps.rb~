@@ -4,7 +4,7 @@ Given(/^I am sign in as vendor witn "(.*?)", "(.*?)"$/) do |email, password|
 end
 
 When(/^I am open product with URL "(.*?)"$/) do |url|
-  @browser.get(url)
+  @browser.get("http://test.interesnee.ru/admin/products/add?productID=16")
 end
 
 Then(/^I find forbiddance on viewing another products$/) do

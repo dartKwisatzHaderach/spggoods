@@ -6,7 +6,7 @@ Feature: change product name
         
         Scenario: rename product
 			Given I am sign in as admin witn "admin@spggoods.com", "admin"
-				And I am on 'Products' page
+				And I am on 'Products'page
 			When I am open product form
 				And change product name to "New product name"
 				And save changes

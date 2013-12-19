@@ -6,7 +6,7 @@ end
 
 After do |scenario|
   @browser.save_screenshot("reports/screenshots/#{scenario.__id__}.png")
-  embed("screenshots/#{scenario.__id__}.png", "image/png", "Screenshot")
+  embed("#{scenario.__id__}.png", "image/png", "Screenshot")
 end
 
 After do

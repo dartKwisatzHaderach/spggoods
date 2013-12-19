@@ -1,4 +1,4 @@
-Given(/^I am on 'Products' page$/) do
+Given(/^I am on 'Products'page$/) do
   visit(ProductsPage)
   on_page(ProductsPage).new_product_name?.should be false
 end
